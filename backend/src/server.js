@@ -8,7 +8,7 @@ const galleryRouter = require("./routes/gallery");
 const contactRouter = require("./routes/contact");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(

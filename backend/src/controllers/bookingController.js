@@ -1,3 +1,4 @@
+const { sendBookingNotification } = require("../services/emailService");
 // In-memory booking store (replace with a real DB in production)
 const bookings = [];
 let nextId = 1;
@@ -22,6 +23,8 @@ const createBooking = (req, res) => {
 
   console.log(`📅 New booking: ${booking.name} — ${booking.service} on ${booking.date} at ${booking.time}`);
 
+  await sendBookingNotification(booking);
+  
   res.status(201).json({
     success: true,
     message: "Booking confirmed! We'll send a reminder before your appointment.",
