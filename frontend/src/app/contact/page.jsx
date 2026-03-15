@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, CheckCircle, Loader } from "lucide-react";
+import WhatsAppButton from "../../components/floating/whatsapp";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -8,7 +9,7 @@ export default function ContactPage() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
-  const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+  const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001/api";
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -83,7 +84,7 @@ export default function ContactPage() {
               <div className="text-center text-mocha/50">
                 <MapPin size={32} className="mx-auto mb-2 text-rose-gold" />
                 <p className="font-sans text-xs tracking-widest uppercase">
-                  12 Blossom Lane, Mayfair, London
+                  Mathiya, Baghi, Ghazipur, Uttar Pradesh
                 </p>
               </div>
             </div>
@@ -114,7 +115,7 @@ export default function ContactPage() {
                   {[
                     { name: "name", label: "Full Name", type: "text", placeholder: "Your name", required: true },
                     { name: "email", label: "Email", type: "email", placeholder: "you@example.com", required: true },
-                    { name: "phone", label: "Phone (optional)", type: "tel", placeholder: "+91 9565 459518" },
+                    { name: "phone", label: "Phone (optional)", type: "tel", placeholder: "+91 9876543210" },
                     { name: "subject", label: "Subject", type: "text", placeholder: "How can we help?", required: true },
                   ].map((field) => (
                     <div key={field.name}>
@@ -161,6 +162,7 @@ export default function ContactPage() {
                     "Send Message"
                   )}
                 </button>
+                <WhatsAppButton />
               </form>
             )}
           </div>

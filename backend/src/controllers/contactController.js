@@ -1,3 +1,4 @@
+const { sendWhatsAppMessage } = require("../services/whatsappService");
 const messages = [];
 
 const sendMessage = (req, res) => {
@@ -16,9 +17,12 @@ const sendMessage = (req, res) => {
   messages.push(entry);
   console.log(`📬 New contact message from ${name} (${email}): ${subject}`);
 
+  const whatsappLink = sendWhatsAppMessage(entry);
+
   res.status(201).json({
     success: true,
     message: "Thank you for reaching out! We'll get back to you within 24 hours.",
+    whatsappLink,
   });
 };
 
