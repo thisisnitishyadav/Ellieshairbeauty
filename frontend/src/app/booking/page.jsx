@@ -154,7 +154,7 @@ export default function BookingPage() {
                   value={form.phone}
                   onChange={handleChange}
                   required
-                  placeholder="+44 7700 000000"
+                  placeholder="+91 7700 000000"
                   className="w-full border border-champagne px-4 py-3 font-body text-espresso focus:outline-none focus:border-rose-gold transition-colors duration-300 bg-cream"
                 />
               </div>
