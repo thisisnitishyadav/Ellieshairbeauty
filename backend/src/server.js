@@ -11,12 +11,25 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middleware
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://ellieshairbeauty.com",
+  "https://www.ellieshairbeauty.com"
+];
+
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "https://ellieshairbeauty.com",
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS not allowed"));
+      }
+    },
     credentials: true,
   })
 );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
