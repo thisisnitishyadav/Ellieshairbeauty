@@ -8,12 +8,12 @@ const services = [
     icon: "✂️",
     description: "Expert cutting, colouring, styling and treatment services tailored to your hair type.",
     items: [
-      { name: "Haircut & Styling", price: 35, duration: "45 min", description: "Precision cut with blow-dry finish" },
-      { name: "Hair Colour", price: 65, duration: "90 min", description: "Full colour with premium ammonia-free products" },
-      { name: "Highlights / Balayage", price: 85, duration: "2 hrs", description: "Natural sun-kissed effect or bold highlights" },
-      { name: "Hair Spa & Ritual", price: 50, duration: "60 min", description: "Deep nourishing treatment from root to tip" },
-      { name: "Rebonding / Smoothening", price: 120, duration: "3 hrs", description: "Glass-like frizz-free straightening" },
-      { name: "Keratin Treatment", price: 100, duration: "2.5 hrs", description: "Long-lasting smoothness and shine" },
+      { name: "Haircut & Styling", price: 350, duration: "45 min", description: "Precision cut with blow-dry finish" },
+      { name: "Hair Colour", price: 650, duration: "90 min", description: "Full colour with premium ammonia-free products" },
+      { name: "Highlights / Balayage", price: 850, duration: "2 hrs", description: "Natural sun-kissed effect or bold highlights" },
+      { name: "Hair Spa & Ritual", price: 500, duration: "60 min", description: "Deep nourishing treatment from root to tip" },
+      { name: "Rebonding / Smoothening", price: 1200, duration: "3 hrs", description: "Glass-like frizz-free straightening" },
+      { name: "Keratin Treatment", price: 1000, duration: "2.5 hrs", description: "Long-lasting smoothness and shine" },
     ],
   },
   {
@@ -22,11 +22,11 @@ const services = [
     icon: "🌸",
     description: "Luxury facials and skincare treatments for radiant, healthy skin using Guinot and premium brands.",
     items: [
-      { name: "Classic Facial", price: 45, duration: "60 min", description: "Deep cleanse, exfoliation & moisturise" },
-      { name: "Anti-Ageing Facial", price: 75, duration: "75 min", description: "Guinot luxury anti-wrinkle treatment" },
-      { name: "Brightening Facial", price: 65, duration: "60 min", description: "Pigmentation & glow-boosting ritual" },
-      { name: "Acne Control Facial", price: 55, duration: "60 min", description: "Targeted treatment for blemish-prone skin" },
-      { name: "Body Wrap", price: 90, duration: "90 min", description: "Detox and nourish with essential oils" },
+      { name: "Classic Facial", price: 450, duration: "60 min", description: "Deep cleanse, exfoliation & moisturise" },
+      { name: "Anti-Ageing Facial", price: 750, duration: "75 min", description: "Guinot luxury anti-wrinkle treatment" },
+      { name: "Brightening Facial", price: 650, duration: "60 min", description: "Pigmentation & glow-boosting ritual" },
+      { name: "Acne Control Facial", price: 550, duration: "60 min", description: "Targeted treatment for blemish-prone skin" },
+      { name: "Body Wrap", price: 900, duration: "90 min", description: "Detox and nourish with essential oils" },
     ],
   },
   {
@@ -35,10 +35,10 @@ const services = [
     icon: "💄",
     description: "Flawless looks for every occasion — from everyday glam to bridal perfection.",
     items: [
-      { name: "Party Makeup", price: 60, duration: "60 min", description: "Bold and beautiful for any event" },
-      { name: "Bridal Makeup", price: 150, duration: "2 hrs", description: "Long-lasting bridal look with trial session" },
-      { name: "Natural / Everyday Look", price: 40, duration: "45 min", description: "Soft, dewy, effortless finish" },
-      { name: "Editorial Makeup", price: 100, duration: "90 min", description: "Creative & high-fashion looks" },
+      { name: "Party Makeup", price: 600, duration: "60 min", description: "Bold and beautiful for any event" },
+      { name: "Bridal Makeup", price: 1500, duration: "2 hrs", description: "Long-lasting bridal look with trial session" },
+      { name: "Natural / Everyday Look", price: 400, duration: "45 min", description: "Soft, dewy, effortless finish" },
+      { name: "Editorial Makeup", price: 1000, duration: "90 min", description: "Creative & high-fashion looks" },
     ],
   },
   {
@@ -47,11 +47,11 @@ const services = [
     icon: "💅",
     description: "Manicure, pedicure and nail art to keep your hands and feet beautifully maintained.",
     items: [
-      { name: "Classic Manicure", price: 25, duration: "30 min", description: "Shape, buff & polish" },
-      { name: "Gel Manicure", price: 40, duration: "45 min", description: "Long-lasting chip-free shine" },
-      { name: "Classic Pedicure", price: 30, duration: "40 min", description: "Relaxing soak, scrub & polish" },
-      { name: "Spa Pedicure", price: 50, duration: "60 min", description: "Luxury ritual with mask and massage" },
-      { name: "Nail Art", price: 20, duration: "30 min", description: "Custom designs per nail" },
+      { name: "Classic Manicure", price: 250, duration: "30 min", description: "Shape, buff & polish" },
+      { name: "Gel Manicure", price: 400, duration: "45 min", description: "Long-lasting chip-free shine" },
+      { name: "Classic Pedicure", price: 300, duration: "40 min", description: "Relaxing soak, scrub & polish" },
+      { name: "Spa Pedicure", price: 500, duration: "60 min", description: "Luxury ritual with mask and massage" },
+      { name: "Nail Art", price: 200, duration: "30 min", description: "Custom designs per nail" },
     ],
   },
   {
@@ -60,10 +60,10 @@ const services = [
     icon: "🪒",
     description: "Premium grooming services for men — expert cuts, beard styling and dedicated skincare.",
     items: [
-      { name: "Men's Haircut", price: 25, duration: "30 min", description: "Fade, taper or classic cut" },
-      { name: "Beard Shaping & Trim", price: 20, duration: "20 min", description: "Precision beard styling" },
-      { name: "Hair Colour (Men)", price: 45, duration: "60 min", description: "Natural or fashion colour" },
-      { name: "Men's Facial", price: 40, duration: "45 min", description: "Deep cleanse and skin refresh" },
+      { name: "Men's Haircut", price: 250, duration: "30 min", description: "Fade, taper or classic cut" },
+      { name: "Beard Shaping & Trim", price: 200, duration: "20 min", description: "Precision beard styling" },
+      { name: "Hair Colour (Men)", price: 450, duration: "60 min", description: "Natural or fashion colour" },
+      { name: "Men's Facial", price: 400, duration: "45 min", description: "Deep cleanse and skin refresh" },
     ],
   },
   {
@@ -72,10 +72,10 @@ const services = [
     icon: "🧖",
     description: "Indulgent body treatments to relax, restore and rejuvenate your body and mind.",
     items: [
-      { name: "Swedish Massage", price: 70, duration: "60 min", description: "Full body relaxation massage" },
-      { name: "Deep Tissue Massage", price: 85, duration: "60 min", description: "Targets tension and muscle knots" },
-      { name: "Aromatherapy Massage", price: 80, duration: "75 min", description: "Essential oil blends for mind & body" },
-      { name: "Hot Stone Therapy", price: 95, duration: "75 min", description: "Volcanic stones melt away stress" },
+      { name: "Swedish Massage", price: 700, duration: "60 min", description: "Full body relaxation massage" },
+      { name: "Deep Tissue Massage", price: 850, duration: "60 min", description: "Targets tension and muscle knots" },
+      { name: "Aromatherapy Massage", price: 800, duration: "75 min", description: "Essential oil blends for mind & body" },
+      { name: "Hot Stone Therapy", price: 950, duration: "75 min", description: "Volcanic stones melt away stress" },
     ],
   },
 ];
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                         {item.name}
                       </h3>
                       <span className="font-sans text-lg font-semibold text-rose-gold">
-                        £{item.price}
+                        ₹{item.price}
                       </span>
                     </div>
                     <p className="font-body text-sm text-mocha/70 mb-3">{item.description}</p>
